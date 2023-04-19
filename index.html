@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 13 jQuery</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="sideBar" class="position-fixed">
+    <div class="sidebar-content">
+        <i class="fa-solid fa-xmark fa-2x"></i>
+        <a href="#home" class="mb-4"><h3>Home</h3></a>
+        <a href="#second" class="mb-4"><h3>Duration</h3></a>
+        <a href="#numbers" class="mb-4"><h3>Details</h3></a>
+        <a href="#contact" class="mb-4"><h3>Contact</h3></a>
+    </div>
+    <div class="out align-self-center text-white d-flex justify-content-center align-items-center">
+        <i class="fa fa-gear fa-3x"></i>
+        <h5 class="ms-1 text-success pos">OPEN</h5>
+    </div>
+</div>
+    <div class="mb-5" id="home">
+        <div class="layer">
+            <div class="content">
+                <h1>Egyption Party</h1>
+                <p style="font-size: 21px;">Let's have Fun</p>
+                <!-- <div class="home-btn">
+                    <button>Hire Me</button>
+                </div> -->
+
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="second">
+        <div class="container py-5">
+            <section id="singers" class="text-center">
+
+                <h3 class="first-h bg-danger w-50 mx-auto mb-0 py-2" >Singer one</h3>
+                <div class="first-p bg-success w-50 mx-auto p-2 ">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                    anim id est laborum."</div>
+                <h3 class="sec-h bg-danger w-50 mx-auto mb-0 py-2" >Singer two</h3>
+                <div class="sec-p bg-success w-50 mx-auto p-2 ">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                    anim id est laborum."</div>
+                <h3 class="third-h bg-danger w-50 mx-auto mb-0 py-2" >Singer three</h3>
+                <div class="third-p bg-success w-50 mx-auto p-2 ">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                    anim id est laborum."</div>
+        
+        
+            </section>
+        </div>
+    </div>
+
+
+
+            <!-- start-number -->
+
+
+    <section id="numbers">
+        <div class="numbers-content">
+            <div class="container">
+                <div class="row text-center  text-light justify-content-center align-items-center">
+                    
+                    <div class="col-md-3   d-flex  align-items-center flex-column ">
+                        <div class="numbers-icon d-flex align-items-center justify-content-center">
+                            <h3 id="days"></h3>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3   d-flex  align-items-center flex-column ">
+                        <div class="numbers-icon d-flex align-items-center justify-content-center">
+                            <h3 id="hours"></h3>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3   d-flex  align-items-center flex-column ">
+                        <div class="numbers-icon d-flex align-items-center justify-content-center">
+                            <h3 id="minutes"></h3>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3   d-flex  align-items-center flex-column ">
+                        <div class="numbers-icon d-flex align-items-center justify-content-center">
+                            <h3 id="seconds"></h3>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+<!-- //................... -->
+
+
+    <section id="contact" class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 bg-light py-5 px-4">
+                  <div class="row">
+                    <div class="col-md-6">
+                        <div class="touch">
+                            <h2 class="pb-4">Get in Touch</h2>
+                            <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum
+                                dolorem
+                                soluta quidem expedita aperiam aliquid at. Totam magni ipsum suscipit amet? Autem
+                                nemo esse laboriosam ratione nobis mollitia inventore?</p>
+                            <ul class="fs-6">
+                                <li><i class="fa-solid fa-location-dot pb-3"></i> 329 WASHINGTON ST BOSTON, MA 02108
+                                </li>
+                                <li><i class="fa-solid fa-phone pb-3"></i> (617) 557-0089</li>
+                                <li><i class="fa-solid fa-envelope pb-3"></i> contact@example.com</li>
+                            </ul>
+                            <div class="social-icons d-flex ">
+                                <div class="icons-contact mx-1 d-flex align-items-center justify-content-center">
+                                    <a href=""><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+                                    
+
+                                </div>
+                                <div class="icons-contact mx-1 d-flex align-items-center justify-content-center">
+                                    <i class="fa-brands fa-twitter fa-xl"></i>
+
+                                </div>
+                                <div class="icons-contact mx-1 d-flex align-items-center justify-content-center">
+                                    <i class="fa-brands fa-instagram fa-xl"></i>
+
+                                </div>
+                                <div class="icons-contact mx-1 d-flex align-items-center justify-content-center">
+                                    <i class="fa-brands fa-pinterest fa-xl"></i>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="send-message">
+                            <h2 class="p-1 mb-3">Send Message Us</h2>
+                            <form>
+                                <div class="pb-2">
+                                    
+                                    <input type="text" class="form-control border border-dark-subtle border-1 mb-3"
+                                        id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Name">
+                                </div>
+                                <div class="pb-2">
+                                    
+                                    <input type="email" class="form-control border border-dark-subtle border-1 mb-3 "
+                                        id="exampleInputPassword1" placeholder="Your Email">
+                                </div>
+                                <div class="form-floating pb-4">
+                                    <textarea placeholder="ENTER MESSAGE..." class="w-100 " rows="7" id="myTextarea" ></textarea>                                    <label for="floatingTextarea2"></label>
+                                </div>
+                                
+                                <p><span id="textCounter" class="text-danger fw-bold fs-3">100</span> Character Reamining</p>
+                        
+                                <button type="button" class="btn btn-primary w-55 h-25 rounded-pill">SEND MESSAGE</button>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+
+                  </div>
+                </div>
+    
+            </div>
+        </div>
+        
+
+    </section>
+
+
+
+    <!-- end-number -->
+
+
+    <script src="jquery-3.6.3.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
