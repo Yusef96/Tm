@@ -1,206 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 13 jQuery</title>
+    <title>Tree Managment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="jquery-3.6.3.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
 </head>
+
 <body>
 
-<div id="sideBar" class="position-fixed">
-    <div class="sidebar-content">
-        <i class="fa-solid fa-xmark fa-2x"></i>
-        <a href="#home" class="mb-4"><h3>Home</h3></a>
-        <a href="#second" class="mb-4"><h3>Duration</h3></a>
-        <a href="#numbers" class="mb-4"><h3>Details</h3></a>
-        <a href="#contact" class="mb-4"><h3>Contact</h3></a>
-    </div>
-    <div class="out align-self-center text-white d-flex justify-content-center align-items-center">
-        <i class="fa fa-gear fa-3x"></i>
-        <h5 class="ms-1 text-success pos">OPEN</h5>
-    </div>
-</div>
-    <div class="mb-5" id="home">
-        <div class="layer">
-            <div class="content">
-                <h1>Egyption Party</h1>
-                <p style="font-size: 21px;">Let's have Fun</p>
-                <!-- <div class="home-btn">
-                    <button>Hire Me</button>
-                </div> -->
+    <div id="sideBar">
+        
+        <div class="sidebar-content rounded-2 me-2">
 
-
-
+            <div class="mainLogo">
+                <!-- <i class="fa-solid fa-user-tie"></i> -->
+                <img src="img/man.png" alt="">
             </div>
 
+            <!-- <i class="fa-solid fa-house"></i>
+            <i class="fa-solid fa-bell"></i>
+            <i class="fa-regular fa-comment-dots"></i>
+            <i class="fa-solid fa-folder"></i> -->
+            <div class="mid-logo">
+                <!-- <img src="img/home (1).png" alt=""> -->
+                <img src="img/home (1).png" alt="">
+                <img src="img/bell.png" alt="">
+                <img src="img/messenger.png" alt="" class="open-right">
+                <img src="img/folder (3).png" alt="" class="open-sec">
+            </div>
 
+            <div class="btn-logo">
+                <!-- <i class="fa-solid fa-gear mb-0"></i> -->
+                <img src="img/settings (2).png" alt="">
+                <!-- <i class="fa-solid fa-arrow-right-from-bracket"></i> -->
+                <img src="img/exit (1).png" alt="" class="ms-1">
+                <!-- <i class="fa-brands fa-canadian-maple-leaf m-3"></i> -->
+                <img src="img/coconut-tree.png" alt="">
+            </div>
+        </div>
+        <div class="out rounded-2 py-2">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 
-    <div id="second">
-        <div class="container py-5">
-            <section id="singers" class="text-center">
-
-                <h3 class="first-h bg-danger w-50 mx-auto mb-0 py-2" >Singer one</h3>
-                <div class="first-p bg-success w-50 mx-auto p-2 ">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                    anim id est laborum."</div>
-                <h3 class="sec-h bg-danger w-50 mx-auto mb-0 py-2" >Singer two</h3>
-                <div class="sec-p bg-success w-50 mx-auto p-2 ">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                    anim id est laborum."</div>
-                <h3 class="third-h bg-danger w-50 mx-auto mb-0 py-2" >Singer three</h3>
-                <div class="third-p bg-success w-50 mx-auto p-2 ">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                    anim id est laborum."</div>
-        
-        
-            </section>
-        </div>
-    </div>
-
-
-
-            <!-- start-number -->
-
-
-    <section id="numbers">
-        <div class="numbers-content">
-            <div class="container">
-                <div class="row text-center  text-light justify-content-center align-items-center">
-                    
-                    <div class="col-md-3   d-flex  align-items-center flex-column ">
-                        <div class="numbers-icon d-flex align-items-center justify-content-center">
-                            <h3 id="days"></h3>
-                        </div>
-
-                    </div>
-                    <div class="col-md-3   d-flex  align-items-center flex-column ">
-                        <div class="numbers-icon d-flex align-items-center justify-content-center">
-                            <h3 id="hours"></h3>
-                        </div>
-
-                    </div>
-                    <div class="col-md-3   d-flex  align-items-center flex-column ">
-                        <div class="numbers-icon d-flex align-items-center justify-content-center">
-                            <h3 id="minutes"></h3>
-                        </div>
-
-                    </div>
-                    <div class="col-md-3   d-flex  align-items-center flex-column ">
-                        <div class="numbers-icon d-flex align-items-center justify-content-center">
-                            <h3 id="seconds"></h3>
-                        </div>
-
-                    </div>
+    <div class="container mid-section py-4">
+        <div class="bg-image  p-3 text-center shadow-1-strong rounded mb-5 text-white d-flex justify-content-around align-items-center "
+            style="background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/003.webp');">
+            <h1 class="mb-3 h2">TaskPro</h1>
+            <div class="ghgh d-flex justify-content-center align-items-center">
+                <div class="created-date mx-4">
+                    <p class="mb-0 fw-bold">CREATED</p>
+                    <p>Dec 3, 9:50 am</p>
                 </div>
-
-            </div>
-
-        </div>
-
-
-    </section>
-
-<!-- //................... -->
-
-
-    <section id="contact" class="">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 bg-light py-5 px-4">
-                  <div class="row">
-                    <div class="col-md-6">
-                        <div class="touch">
-                            <h2 class="pb-4">Get in Touch</h2>
-                            <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum
-                                dolorem
-                                soluta quidem expedita aperiam aliquid at. Totam magni ipsum suscipit amet? Autem
-                                nemo esse laboriosam ratione nobis mollitia inventore?</p>
-                            <ul class="fs-6">
-                                <li><i class="fa-solid fa-location-dot pb-3"></i> 329 WASHINGTON ST BOSTON, MA 02108
-                                </li>
-                                <li><i class="fa-solid fa-phone pb-3"></i> (617) 557-0089</li>
-                                <li><i class="fa-solid fa-envelope pb-3"></i> contact@example.com</li>
-                            </ul>
-                            <div class="social-icons d-flex ">
-                                <div class="icons-contact mx-1 d-flex align-items-center justify-content-center">
-                                    <a href=""><i class="fa-brands fa-facebook-f fa-xl"></i></a>
-                                    
-
-                                </div>
-                                <div class="icons-contact mx-1 d-flex align-items-center justify-content-center">
-                                    <i class="fa-brands fa-twitter fa-xl"></i>
-
-                                </div>
-                                <div class="icons-contact mx-1 d-flex align-items-center justify-content-center">
-                                    <i class="fa-brands fa-instagram fa-xl"></i>
-
-                                </div>
-                                <div class="icons-contact mx-1 d-flex align-items-center justify-content-center">
-                                    <i class="fa-brands fa-pinterest fa-xl"></i>
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="send-message">
-                            <h2 class="p-1 mb-3">Send Message Us</h2>
-                            <form>
-                                <div class="pb-2">
-                                    
-                                    <input type="text" class="form-control border border-dark-subtle border-1 mb-3"
-                                        id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Name">
-                                </div>
-                                <div class="pb-2">
-                                    
-                                    <input type="email" class="form-control border border-dark-subtle border-1 mb-3 "
-                                        id="exampleInputPassword1" placeholder="Your Email">
-                                </div>
-                                <div class="form-floating pb-4">
-                                    <textarea placeholder="ENTER MESSAGE..." class="w-100 " rows="7" id="myTextarea" ></textarea>                                    <label for="floatingTextarea2"></label>
-                                </div>
-                                
-                                <p><span id="textCounter" class="text-danger fw-bold fs-3">100</span> Character Reamining</p>
-                        
-                                <button type="button" class="btn btn-primary w-55 h-25 rounded-pill">SEND MESSAGE</button>
-
-                            </form>
-
-                        </div>
-
-                    </div>
-
-
-                  </div>
+                <div class="created-date mx-4">
+                    <p class="mb-0 fw-bold">DUE DATE</p>
+                    <p>Dec 3, 9:50 am</p>
+                </div>
+                <div class="created-date mx-4">
+                    <p class="mb-0 fw-bold">TRACK TIME</p>
+                    <p>Dec 3, 9:50 am</p>
                 </div>
     
             </div>
         </div>
+        <div class="row">
+
+            <div class="title1 col-md-4">
+                <div class="mb-5">
+                    <div class="first-title">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <p class="fw-bolder mb-2 card-lab">IN PROGRESS</p>
+                            <p class="rounded fw-bolder number mb-2 mx-1 ">11</p>
+                        </div>
+                        <i class="fa-regular fa-square-plus fs-4 "></i>
+                    </div>
+
+                    <div class="card p-3">
+                        <div class="card-title">
+                            <h4>Task title</h4>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+
+                        <p>Task Descriptio : Lorem, ipsum dolor sit amet consectetur adipisandae?</p>
+                        <div class="cardFooter">
+                            <div class="card-img d-flex  align-items-center ">
+                                <img src="img/client-1.png" alt="" class="me-2 ">
+                                <p class="mb-0">Adam Ali</p>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <button type="button" class=" docs-btn p-2 rounded-3 mb-2">Docs</button>
+                                <button type="button" class="pre-btn p-2 rounded-3">Prepare</button>
+
+                            </div>
+                            <div>
+                                <span class="span-bg2 w3-tag  rounded "><i
+                                        class="fa-solid fa-paperclip me-1"></i>1</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card p-3">
+                        <div class="card-title">
+                            <h4>Task title</h4>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+
+                        <p>Task Descriptio : Lorem, ipsum dolor sit amet consectetur adipisandae?</p>
+                        <div class="cardFooter">
+                            <div class="card-img d-flex  align-items-center ">
+                                <img src="img/client-1.png" alt="" class="me-2 ">
+                                <p class="mb-0">Adam Ali</p>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <button type="button" class="docs-btn p-2 rounded-3 mb-2">Docs</button>
+                                <button type="button" class="pre-btn p-2 rounded-3  ">Prepare</button>
+
+                            </div>
+                            <div>
+                                <span class="span-bg2 w3-tag  rounded "><i
+                                        class="fa-solid fa-paperclip me-1"></i>1</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="title2 col-md-4">
+                <div class="mb-5 ">
+                    <div class="first-title2">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <p class="fw-bolder mb-2 card-lab">COMPLETED</p>
+                            <p class="rounded fw-bolder number mb-2 mx-1">11</p>
+                        </div>
+                        <i class="fa-regular fa-square-plus fs-4 "></i>
+                    </div>
+
+                    <div class="card p-3">
+                        <div class="card-title">
+                            <h4>Task title</h4>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <!-- <div class="mb-5 ">
+                        <span class="span-bg w3-tag  rounded fw-bolder">Abstergo</span>
+                        <span class="span-bg w3-tag  rounded fw-bolder">UI Design</span>
+                    </div> -->
+                        <p>Task Descriptio : Lorem, ipsum dolor sit amet consectetur adipisandae?</p>
+                        <div class="cardFooter">
+                            <div class="card-img d-flex  align-items-center ">
+                                <img src="img/client-1.png" alt="" class="me-2 ">
+                                <p class="mb-0">Adam Ali</p>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <button type="button" class="mx-1 illus-btn p-2 rounded-3">illustration</button>
+                            </div>
+                            <div>
+                                <span class="span-bg2 w3-tag  rounded "><i
+                                        class="fa-solid fa-paperclip me-1"></i>1</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="title1 col-md-4">
+                <div class="mb-5 ">
+                    <div class="first-title3">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <p class="fw-bolder mb-2 card-lab">BACKLOG</p>
+                            <p class="rounded fw-bolder number mb-2 mx-1">11</p>
+                        </div>
+                        <i class="fa-regular fa-square-plus fs-4 "></i>
+                    </div>
+
+                    <div class="card p-3">
+                        <div class="card-title">
+                            <h4>Task title</h4>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+
+                        <p>Task Descriptio : Lorem, ipsum dolor sit amet consectetur adipisandae?</p>
+                        <div class="cardFooter">
+                            <div class="card-img d-flex  align-items-center ">
+                                <img src="img/client-1.png" alt="" class="me-2 ">
+                                <p class="mb-0">Adam Ali</p>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <button type="button" class="mx-1 code-btn p-2 rounded-3">Coding</button>
+
+                            </div>
+                            <div>
+                                <span class="span-bg2 w3-tag  rounded "><i
+                                        class="fa-solid fa-paperclip me-1"></i>1</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container right-sec py-5">
+
+        <div class="border-3 border-top-0 border-start-0 border-end-0  mb-4 right-title">
+            <p class="fw-bolder border-4 mb-0"><i class="fa-solid fa-caret-right"></i>  Your recent project work</p>
+        </div>
+
+
         
+        <div class="upper-right mb-3">
+                <div>
+                        <div class="row justify-content-center">
+                            <div class="col-md-5 rounded-3 right-det p-1 me-2">
+                                <p class="fw-bolder pt-2">Design of page</p>
+                                <div class="d-flex mb-3 me-2">
+                                    <div class="text-center me-2 right-label">
+                                        <p class="mb-2 text-muted fw-bold">Assigned</p>
+                                        <img src="img/client-1.png" alt="" class="me-2">
+                                    </div>
+                                    <div class="text-center right-label">
+                                        <p class="mb-2 text-muted fw-bold">Progress</p>
+                                        <p class="mb-0 perc">71%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 rounded-3 right-det p-1 ">
+                                <p class="fw-bolder pt-2">Design of page</p>
+                                <div class="d-flex mb-3 me-2">
+                                    <div class="text-center me-2 right-label">
+                                        <p class="mb-2 text-muted fw-bold">Assigned</p>
+                                        <img src="img/client-1.png" alt="" class="me-2">
+                                    </div>
+                                    <div class="text-center right-label">
+                                        <p class="mb-2 text-muted fw-bold">Progress</p>
+                                        <p class="mb-0 perc2">43%</p>
+                                    </div>
+                                </div>
+                            </div>
 
-    </section>
+           
+
+                        </div>
+
+                    
+                </div>
+
+
+                
+            <div class="graph py-3">
+                <h5 class="fw-bold"><i class="fa-solid fa-caret-right"></i> Time Managment</h5>
+                <img src="img/Screenshot 2023-08-09 155454.png" alt="" class="w-100">
+            </div>
+
+        </div>
 
 
 
-    <!-- end-number -->
+        <div class="bottom-right">
+            <div class="bottom-right-title">
+                <P class="mb-0 fw-bold ms-2"><i class="fa-solid fa-caret-right"></i>  Team Chat</P>
+                <div class="m-2">
+                    <!-- <i class="fa-solid fa-video mx-1"></i> -->
+                    <img src="img/video-record (2).png" alt="">
+                    <img src="img/telephone (2).png" alt="">
+                    <!-- <i class="fa-solid fa-phone mx-1"></i> -->
+                </div>
+            </div>
 
+            <div class="chat">
+                <img src="img/maxresdefault.jpg" class="w-100" alt="">
+            </div>
+        </div>
 
-    <script src="jquery-3.6.3.min.js"></script>
-    <script src="index.js"></script>
+    </div>
+
 </body>
+
 </html>
