@@ -21,6 +21,7 @@ body{
     display: flex;
     background-color: white;
     padding: 0.6rem 0 0.6rem 0.9rem;
+    
 }
 
 .sidebar-content{
@@ -249,7 +250,7 @@ h6{
 }
 
 .mid-section{
-    background-color: #f1efef;
+    background-color: #f7f8fa;
 }
 
 .right-title p{
@@ -310,6 +311,15 @@ h6{
     background-color: #ffffff;
 }
 
+.right-det img{
+    width: 100%;
+}
+
+.right-det-mob img{
+    width: 40%;
+    border-radius: 50%;
+}
+
 
 
 .right-label p{
@@ -342,8 +352,57 @@ h6{
     }
 } */
 
+/* .mobi{
+    display: none;
+} */
 
+.avat{
+    width: 2.5rem;
+}
+.mobi {
+    /* background-color: red; */
+    display: none;
+    position: relative;
+    overflow-x: auto;
+    padding: 0 1rem;
+  }
+  
+  .fixed-column {
+    /* background-color: green; */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 1.8rem; /* Adjust the width as per your requirement */
+    /* background-color: #f0f0f0; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.3rem;
+  }
+  
+  .scrollable-content {
+    margin-left: 20px; /* Ensure the content doesn't overlap with the fixed column */
+  }
 
+@media only screen and (max-width: 1000px) {
+        #sideBar{
+            display: none;
+        }
+        .bg-image{
+            width: 100%;
+        }
+        .dates p{
+            font-size: 0.7rem;
+        }
+        .navbar{
+            display: block;
+        }
+        .mobi{
+            display: block;
+        }
+  }
 @media only screen and (max-width: 1400px) {
     .out{
         display: none;
@@ -372,12 +431,26 @@ h6{
 
 .chat img{
     border-radius: 8%;
+    width: 100%;
 }
 
 .graph{
     margin-top: 2rem;
 }
+.graph img{
+    width: 100%;
+}
+
+.mob-ch img{
+    width: 80%;
+    margin: 0 2rem;
+}
 
 .graph h5{
     font-size: 1rem;
 }
+.right-mob{
+    display: none;
+}
+
+
